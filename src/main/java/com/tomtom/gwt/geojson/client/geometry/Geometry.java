@@ -25,6 +25,11 @@ public class Geometry<C> extends AbstractGeoJson {
     }
     
     @JsOverlay
+    public static Geometry<double[]> buildPoint(double longitude, double latitude) {
+        return build(GeometryType.Point, new double[]{longitude, latitude});
+    }
+    
+    @JsOverlay
     public static Geometry<double[]> buildPoint(double[] coordinates) {
         return build(GeometryType.Point, coordinates);
     }

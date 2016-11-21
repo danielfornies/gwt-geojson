@@ -23,8 +23,12 @@ public class Feature<C, P> extends AbstractGeoJson {
     public static <C, P> Feature<C, P> build(Geometry<C> geometry, P properties) {
         Feature feature = new Feature();
         feature.setType("Feature");
-        feature.setGeometry(geometry);
-        feature.setProperties(properties);
+        if (geometry != null) {
+            feature.setGeometry(geometry);
+        }
+        if (properties != null) {
+            feature.setProperties(properties);
+        }
         return feature;
     }
     
