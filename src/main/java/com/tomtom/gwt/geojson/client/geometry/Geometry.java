@@ -47,8 +47,6 @@ public class Geometry<C> extends AbstractGeoJson {
         return geometry;
     }
     
-    // TODO
-    
     private Geometry() {
     }
     
@@ -56,7 +54,6 @@ public class Geometry<C> extends AbstractGeoJson {
     @JsProperty
     private native void setCoordinates(C coordinates);
     
-    
-    
-    
+    @JsProperty
+    public native C getCoordinates();
 }
