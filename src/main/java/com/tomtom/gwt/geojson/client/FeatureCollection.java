@@ -13,6 +13,9 @@ import jsinterop.annotations.JsType;
 @JsType(isNative = true, name = JS_OBJECT_TYPE, namespace = JsPackage.GLOBAL)
 public class FeatureCollection extends AbstractGeoJson {
     
+    @JsOverlay
+    public static final FeatureCollection EMPTY = FeatureCollection.build(new Feature[]{});
+    
     private FeatureCollection() {
     }
     

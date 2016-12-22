@@ -12,4 +12,7 @@ import jsinterop.annotations.JsType;
 @JsType(isNative = true, name = JS_OBJECT_TYPE, namespace = JsPackage.GLOBAL)
 public class GeometryCollection extends AbstractGeoJson {
     
+    
+    
+    // TODO
 }

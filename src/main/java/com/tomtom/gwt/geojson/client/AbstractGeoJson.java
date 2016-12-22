@@ -7,7 +7,8 @@ import jsinterop.annotations.JsType;
 
 /**
  *
- * 
+ * @see http://geojson.org/
+ * @see https://tools.ietf.org/html/rfc7946
  */
 @JsType(isNative = true, name = JS_OBJECT_TYPE, namespace = JsPackage.GLOBAL)
 public abstract class AbstractGeoJson {
@@ -17,4 +18,6 @@ public abstract class AbstractGeoJson {
 
     @JsProperty    
     protected native void setType(String value);
+    
+    // TODO: bbox?
 }
