@@ -6,7 +6,7 @@ import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
 /**
- *
+ * Base type for a GeoJson object.
  * @see http://geojson.org/
  * @see https://tools.ietf.org/html/rfc7946
  */
@@ -18,6 +18,4 @@ public abstract class AbstractGeoJson {
 
     @JsProperty    
     protected native void setType(String value);
-    
-    // TODO: bbox?
 }

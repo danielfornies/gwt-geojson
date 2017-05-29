@@ -10,7 +10,7 @@
         <artifactId>gwt-super</artifactId>
         <version>6.ONP-SNAPSHOT</version>
     </parent>
-    
+    <description>GWT implementation of the GeoJson specification. http://geojson.org/</description>
     <properties>
     </properties>
     
