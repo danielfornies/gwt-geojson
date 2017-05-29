@@ -11,8 +11,6 @@
         <version>9.ONP</version>
     </parent>
     <description>GWT implementation of the GeoJson specification. http://geojson.org/</description>
-    <properties>
-    </properties>
     
     <dependencies>
         <dependency>
@@ -22,15 +20,6 @@
     </dependencies>
     
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.3</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
