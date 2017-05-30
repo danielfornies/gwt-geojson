@@ -15,6 +15,7 @@
     <scm>
         <connection>scm:git:ssh://git@bitbucket.tomtomgroup.com:7999/onp/gwt-geojson.git</connection>
         <developerConnection>scm:git:ssh://git@bitbucket.tomtomgroup.com:7999/onp/gwt-geojson.git</developerConnection>
+        <tag>HEAD</tag>
     </scm>
     
     <distributionManagement>
