@@ -17,6 +17,31 @@
         <developerConnection>scm:git:ssh://git@bitbucket.tomtomgroup.com:7999/onp/gwt-geojson.git</developerConnection>
     </scm>
     
+    <distributionManagement>
+        <site>
+            <id>tomtom-projects</id>
+            <url>dav:http://maven.tomtomgroup.com/sites/gwt-geojson/${project.artifactId}/${project.version}</url>
+        </site>
+        <snapshotRepository>
+            <id>tomtom-snapshots</id>
+            <name>tomtom-snapshots</name>
+            <url>http://nexus.tomtomgroup.com:8080/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>tomtom-public</id>
+            <name>Inhouse Repository</name>
+            <url>http://nexus-ams.tomtomgroup.com:8081/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>tomtom-central</id>
+            <name>Inhouse Repository</name>
+            <url>http://nexus.tomtomgroup.com:8080/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>com.google.gwt</groupId>
