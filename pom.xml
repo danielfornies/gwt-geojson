@@ -12,6 +12,11 @@
     </parent>
     <description>GWT implementation of the GeoJson specification. http://geojson.org/</description>
     
+    <scm>
+        <connection>scm:git:ssh://git@bitbucket.tomtomgroup.com:7999/onp/gwt-geojson.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.tomtomgroup.com:7999/onp/gwt-geojson.git</developerConnection>
+    </scm>
+    
     <dependencies>
         <dependency>
             <groupId>com.google.gwt</groupId>
