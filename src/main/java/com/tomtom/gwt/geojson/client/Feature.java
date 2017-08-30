@@ -15,7 +15,10 @@ import jsinterop.annotations.JsType;
  * @param <P> The sub-type for the feature properties.
  */
 @JsType(isNative = true, name = JS_OBJECT_TYPE, namespace = JsPackage.GLOBAL)
-public class Feature<C, P> extends AbstractGeoJson {
+public final class Feature<C, P> extends AbstractGeoJson {
+    
+    @JsOverlay
+    public static final String FEATURE_TYPE = "Feature";
 
     private Feature() {
     }
@@ -23,7 +26,7 @@ public class Feature<C, P> extends AbstractGeoJson {
     @JsOverlay
     public static <C, P> Feature<C, P> build(Geometry<C> geometry, P properties) {
         Feature feature = new Feature();
-        feature.setType("Feature");
+        feature.setType(FEATURE_TYPE);
         if (geometry != null) {
             feature.setGeometry(geometry);
         }
@@ -32,7 +35,7 @@ public class Feature<C, P> extends AbstractGeoJson {
         }
         return feature;
     }
-
+    
     @JsProperty
     public native Geometry<C> getGeometry();
 
